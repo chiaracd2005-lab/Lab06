@@ -66,7 +66,7 @@ class Controller:
                 ft.Text(f"Nessuno strumento trovato per il tipo: '{tipo_cercato}'.")
             )
         else:
-            for strumento in strumenti:
+            for strumento in strumenti: #trasforma ogni strumento ricevuto in un blocco di testo grafico ft.Text(...) dentro la lista visiva
                 self._view.lista_strumenti_ricerca.controls.append(ft.Text(str(strumento)))
 
         self._view.update()
